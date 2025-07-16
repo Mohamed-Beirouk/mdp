@@ -240,3 +240,57 @@ function changeLanguage(lang) {
 document.addEventListener('DOMContentLoaded', function() {
     changeLanguage('ar');
 });
+
+
+let currentSlide = 0;
+let slideInterval;
+const slides = document.querySelectorAll('.gallery-slider img');
+const dotsContainer = document.querySelector('.gallery-dots');
+
+// Create dots
+slides.forEach((slide, index) => {
+  const dot = document.createElement('div');
+  dot.classList.add('gallery-dot');
+  if(index === 0) dot.classList.add('active');
+  dot.addEventListener('click', () => goToSlide(index));
+  dotsContainer.appendChild(dot);
+});
+
+const dots = document.querySelectorAll('.gallery-dot');
+
+function showSlide(index) {
+  // Hide all slides
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+  
+  // Show current slide
+  slides[index].classList.add('active');
+  dots[index].classList.add('active');
+  currentSlide = index;
+}
+
+function nextSlide() {
+  resetInterval();
+  showSlide((currentSlide + 1) % slides.length);
+}
+
+function prevSlide() {
+  resetInterval();
+  showSlide((currentSlide - 1 + slides.length) % slides.length);
+}
+
+function goToSlide(index) {
+  resetInterval();
+  showSlide(index);
+}
+
+function resetInterval() {
+  clearInterval(slideInterval);
+  slideInterval = setInterval(nextSlide, 3000);
+}
+
+// Auto-advance every 3 seconds
+slideInterval = setInterval(nextSlide, 3000);
+
+// Show first slide initially
+showSlide(0);

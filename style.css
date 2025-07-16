@@ -34,37 +34,106 @@ body {
 }
 
 /* ================ */
-/* HEADER */
-/* ================ */
+/* Updated Header Styles */
 header {
-  background-color: var(--primary-color);
-  color: var(--white);
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    /* background-color: #2c3e50; */
+    /* color: white; */
+    padding: 15px 0;
+    /* position: sticky; */
+    top: 0;
+    z-index: 100;
+    color: black !important;
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-[dir="rtl"] header .container {
-  justify-content: center;
-  flex-direction: column;
-  gap: 15px;
+.logo-container {
+    width: 80px;
+    height: 80px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+
+h1{
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+.header-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.title-container {
+    flex: 1;
+}
+
+#site-title {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.arabic-title, .french-title {
+    color : black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arabic-title {
+    font-size: 1.3rem;
+    direction: rtl;
+}
+
+.french-title {
+    font-size: 1rem;
+    font-weight: normal;
+    opacity: 0.9;
+}
+
+#site-title i {
+    color : black;
+    font-size: 1.2em;
+    color: #3498db;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .logo-container {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .arabic-title {
+        font-size: 1.1rem;
+    }
+    
+    .french-title {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .arabic-title {
+        font-size: 1rem;
+    }
+    
+    .french-title {
+        font-size: 0.8rem;
+    }
 }
 
 .language-switcher {
@@ -407,4 +476,116 @@ footer {
   .info-card {
     padding: 20px;
   }
+}
+
+
+/* Icons Styling */
+.symptoms-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+[dir="rtl"] .symptoms-list li {
+    flex-direction: row-reverse;
+}
+
+.symptoms-list li i {
+    color: #3498db;
+    font-size: 1.2rem;
+    min-width: 25px;
+    text-align: center;
+}
+
+/* Leadership Icons */
+.leadership-card p i,
+.leadership-card h3 i {
+    color: #1A5D1A;
+    margin-left: 8px;
+}
+
+[dir="rtl"] .leadership-card p i,
+[dir="rtl"] .leadership-card h3 i {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+/* Contact Icons */
+.contact-info i {
+    color: #2c3e50;
+    min-width: 25px;
+    text-align: center;
+}
+
+
+/* Centered Symptoms */
+.symptoms-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.symptoms-list {
+    width: 100%;
+    max-width: 800px;
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.centered {
+    text-align: center;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.centered-list {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 700px;
+    list-style-position: inside;
+    text-align: center;
+}
+
+.centered-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    text-align: right; /* For Arabic */
+}
+
+[dir="rtl"] .centered-list li {
+    text-align: right;
+    flex-direction: row-reverse;
+}
+
+[dir="ltr"] .centered-list li {
+    text-align: left;
+    flex-direction: row;
+}
+
+/* Icons styling */
+.centered-list i {
+    color: #3498db;
+    font-size: 1.2rem;
+    min-width: 25px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .symptoms-list {
+        padding: 20px;
+    }
+    
+    .centered-list li {
+        font-size: 0.95rem;
+    }
 }

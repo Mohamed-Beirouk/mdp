@@ -164,19 +164,19 @@ h1{
   transform: translateY(-2px);
 }
 
+/* Hero Section */
 .hero {
   position: relative;
   background: url('images/mdp.png') no-repeat center center;
   background-size: cover;
-  color: var(--white);
+  color: white;
   text-align: center;
-  padding: 100px 0; /* Reduced padding */
-  min-height: 200px; /* Reduced height */
+  padding: 20vh 0; /* Responsive vertical padding */
+  min-height: 50vh; /* Responsive minimum height */
   display: flex;
   align-items: center;
-  width: 50%; /* Set to half width */
-  margin: 0 auto; /* Center horizontally */
-  float: none; /* Ensure it doesn't float */
+  width: 100%;
+  overflow: hidden; /* Prevents content overflow */
 }
 
 .hero::before {
@@ -186,34 +186,72 @@ h1{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
   z-index: 1;
 }
 
-.hero .container {
+.hero-content {
   position: relative;
   z-index: 2;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  width: 100%; /* Ensure container fills hero */
-}
-
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-.hero p {
-  font-size: 1.2rem;
+  width: 90%;
   max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
+}
+
+#hero-title {
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size */
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#hero-subtitle {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero i {
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 15vh 0;
+    min-height: 40vh;
+  }
+  
+  #hero-title {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  #hero-subtitle {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 10vh 0;
+    min-height: 30vh;
+  }
+  
+  .hero-content {
+    width: 95%;
+    padding: 10px;
+  }
 }
 
 /* ================ */

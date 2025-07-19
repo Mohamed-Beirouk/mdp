@@ -794,11 +794,99 @@ footer {
     padding: 60px 0;
 }
 
+/* Leadership Section */
 .leadership-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    margin-top: 40px;
+}
+
+.president-card {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.president-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 20px;
+    border: 5px solid #1A5D1A;
+}
+
+.president-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.president-info {
+    flex: 1;
+}
+
+.president-message {
+    grid-column: 1 / -1;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.president-message h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.message-content {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.message-content p {
+    margin-bottom: 15px;
+}
+
+.signature {
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .president-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .president-image {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    .message-content {
+        text-align: right;
+    }
+}
+
+@media (max-width: 480px) {
+    .president-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .president-message {
+        padding: 20px;
+    }
 }
 
 .leader-card {

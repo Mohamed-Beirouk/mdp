@@ -241,10 +241,9 @@ document.addEventListener('DOMContentLoaded', function() {
     changeLanguage('ar');
 });
 
-
 let currentSlide = 0;
 let slideInterval;
-const slides = document.querySelectorAll('.gallery-slider img');
+const slides = document.querySelectorAll('.slide-item');
 const dotsContainer = document.querySelector('.gallery-dots');
 
 // Create dots
@@ -286,11 +285,11 @@ function goToSlide(index) {
 
 function resetInterval() {
   clearInterval(slideInterval);
-  slideInterval = setInterval(nextSlide, 3000);
+  slideInterval = setInterval(nextSlide, 9000);
 }
 
 // Auto-advance every 3 seconds
-slideInterval = setInterval(nextSlide, 3000);
+slideInterval = setInterval(nextSlide, 9000);
 
 // Show first slide initially
 showSlide(0);

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الجمعية الموريتانية للوقاية من الصمم</title>
+    <link rel="stylesheet" href="stylex.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 id="site-title-fr" class="title_fr">Association Mauritanienne pour la Prévention de la Surdité</h1>
+                <div class="logo-container">
+                    <img src="images/logo_f.png" alt="Association Logo" class="header-logo">
+                </div>
+                <h1 id="site-title-ar" class="title_ar">
+                    <span class="arabic-title"> الجمعية الموريتانية للوقاية من الصمم</span>
+                </h1>
+            </div>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button onclick="changeLanguage('ar')" class="lang-btn active" id="ar-btn">
+                    <i class="fas fa-language"></i> العربية
+                </button>
+                <button onclick="changeLanguage('fr')" class="lang-btn" id="fr-btn">
+                    <i class="fas fa-language"></i> Français
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 id="hero-title"><i class="fas fa-info-circle"></i>مكافحة الصمم في موريتانيا</h2>
+                <p id="hero-subtitle"><i class="fas fa-arrow-left"></i> تعزيز صحة السمع وتقديم الدعم للمحتاجين</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 id="about-title"><i class="fas fa-info-circle"></i>مكافحة الصمم في موريتانيا</h2>
+            <p id="about-content"><i class="fas fa-arrow-left"></i> تعزيز صحة السمع وتقديم الدعم للمحتاجين</p>
+        </div>
+    </section>
+
+    <!-- Leadership Section with Icon -->
+    <section class="leadership" id="leadership">
+        <div class="container">
+            <h2 class="section-title" id="leadership-title"><i class="fas fa-users"></i> الفريق القيادي</h2>
+            <div class="leadership-grid">
+                <!-- President Card with Image -->
+                <div class="leader-card president-card">
+                    <div class="president-image">
+                        <img src="images/ceo2.png" alt="الدكتور عبد الله ولد الددي">
+                    </div>
+                    <div class="president-info">
+                        <h3><i class="fas fa-user-tie"></i> <span id="president-name">الدكتور عبد الله ولد الددي</span></h3>
+                        <p><i class="fas fa-stethoscope"></i> <span id="president-title">رئيس الجمعية - أخصائي الأنف والأذن والحنجرة</span></p>
+                    </div>
+                </div>
+                
+                <!-- President's Message -->
+                <div class="president-message">
+                    <h3><i class="fas fa-quote-right"></i> <span id="president-message-title">كلمة الرئيس</span></h3>
+                    <div class="message-content">
+                        <p id="president-message-p1">بالنظر إلى المخاطر التي تشكلها إصابات السمع غير المعالجة، وبعد أن توصلت المنظمة خلال تجربتها الممتدة لأزيد من 20 سنة، إلى أن الكتل السمعية والوضعيات الخاطئة للإرضاع من أكبر أسباب الصمم، قررت الجمعية الموريتانية لمكافحة الصمم (AMPS) تنظيم حملة كشف وعلاج لصالح الفئات الأكثر تعرضا (عمال المناجم والمقالع، أطفال المدارس، سائقو الشاحنات والآليات ... ).</p>
+
+                        <p id="president-message-p2">تهدف هذه الحملة إلى توفير معاينات مجانية مع العلاج وتوزيع الأدوات المساعدة للسمع وإعداد قاعدة بيانات تستفيد منها جميع الجهات المعنية بوضع الخطط والاستراتيجيات.</p>
+                    </div>
+                </div>
+
+                <!-- Other Members -->
+                <div class="leader-card">
+                    <h3><i class="fas fa-user-md"></i> <span id="member1-name">الدكتور الشيخ حننا</span></h3>
+                    <p><i class="fas fa-hospital"></i> <span id="member1-title">عضو مجلس الإدارة</span></p>
+                </div>
+                
+                <div class="leader-card">
+                    <h3><i class="fas fa-user-graduate"></i> <span id="member2-name">أحمد بزيد دحمان</span></h3>
+                    <p><i class="fas fa-briefcase"></i> <span id="member2-title">عضو مجلس الإدارة</span></p>
+                </div>
+                
+                <div class="leader-card">
+                    <h3><i class="fas fa-user-tie"></i> <span id="member3-name">محمد يسلم عبد الدايم</span></h3>
+                    <p><i class="fas fa-chart-line"></i> <span id="member3-title">عضو مجلس الإدارة</span></p>
+                </div>
+                
+                <div class="leader-card">
+                    <h3><i class="fas fa-user-nurse"></i> <span id="member4-name">د. سيد احمد لفظل</span></h3>
+                    <p><i class="fas fa-heartbeat"></i> <span id="member4-title">عضو مجلس الإدارة</span></p>
+                </div>
+                
+                <div class="leader-card">
+                    <h3><i class="fas fa-user-graduate"></i> <span id="member5-name">فطمت تراوري</span></h3>
+                    <p><i class="fas fa-hands-helping"></i> <span id="member5-title">عضو مجلس الإدارة</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 id="gallery-title"><i class="fas fa-images"></i> معرض الصور</h2>
+            <div class="gallery-container">
+                <button class="gallery-nav prev" onclick="prevSlide()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="gallery-slider">
+                    <div class="slide-item active">
+                        <img src="images/1.png" alt="فريق الأطباء المتطوعين">
+                        <div class="image-description">
+                            <h4 id="slide1-title">فريق الأطباء المتطوعين</h4>
+                            <p id="slide1-desc"></p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/2.png" alt="فريق العمل الطبي">
+                        <div class="image-description">
+                            <h4 id="slide2-title">الكادر الطبي المتطوع</h4>
+                            <p id="slide2-desc">أطباء متخصصون يقدمون خدماتهم التطوعية لمساعدة المرضى</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/3.png" alt="استقبال المرضى">
+                        <div class="image-description">
+                            <h4 id="slide3-title">العلاج</h4>
+                            <p id="slide3-desc">مواطنون ينتظرون العلاج في احدي جولات المنظمة</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/4.png" alt="توزيع الأدوية">
+                        <div class="image-description">
+                            <h4 id="slide4-title">البعثة الطبية</h4>
+                            <p id="slide4-desc">توزيع العلاجات والأدوية خلال إحدى الرحلات التطوعية الميدانية</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/5.png" alt="شهادة وزارة الصحة">
+                        <div class="image-description">
+                            <h4 id="slide5-title">اعتماد رسمي</h4>
+                            <p id="slide5-desc">شهادة تزكية من وزارة الصحة - قسم إدارة التخطيط والتعاون الإعلام الصحي</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/6.png" alt="وثيقة رسمية">
+                        <div class="image-description">
+                            <h4 id="slide6-title">توثيق رسمي</h4>
+                            <p id="slide6-desc">إفادة تسجيل في قاعدة بيانات الوزارة المكلفة بالعلاقات مع البرلمان والمجتمع المدني</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/7.png" alt="وثيقة وزارة الصحة">
+                        <div class="image-description">
+                            <h4 id="slide7-title">اعتماد حكومي</h4>
+                            <p id="slide7-desc">وثيقة تزكية رسمية من وزارة الصحة تثبت جهود الجمعية</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/8.png" alt="شهادة بلدية تيارت">
+                        <div class="image-description">
+                            <h4 id="slide8-title">شراكة محلية</h4>
+                            <p id="slide8-desc">شهادة تقدير من بلدية تيارت في نواكشوط تقديراً لجهود الجمعية</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/9.png" alt="مقال الألم المنسي">
+                        <div class="image-description">
+                            <h4 id="slide9-title">تغطية إعلامية</h4>
+                            <p id="slide9-desc">مقال في الجريدة الرسمية بعنوان "الألم المنسي" يوثق جهود الجمعية في المناطق النائية</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/10.png" alt="تطوع في إينشيري">
+                        <div class="image-description">
+                            <h4 id="slide10-title">عمل ميداني</h4>
+                            <p id="slide10-desc">بعثة تطوعية في منطقة إينشيري النائية لتقديم الخدمات الطبية</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/11.png" alt="قصة عيشتا فال">
+                        <div class="image-description">
+                            <h4 id="slide11-title">قصة نجاح</h4>
+                            <p id="slide11-desc">تقرير عن حالة عيشتا فال التي عانت من الصمم منذ الطفولة وتم علاجها بواسطة الجمعية</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/12.png" alt="تطوع في المدارس">
+                        <div class="image-description">
+                            <h4 id="slide12-title">برنامج المدارس</h4>
+                            <p id="slide12-desc">تغطية إعلامية لبرنامج الكشف المبكر عن الصمم في المدارس</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/13.png" alt="مقال الوقاية خير من العلاج">
+                        <div class="image-description">
+                            <h4 id="slide13-title">توعية صحية</h4>
+                            <p id="slide13-desc">مقال في الجريدة الفرنسية بعنوان "الوقاية خير من العلاج" عن برامج التوعية</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/14.png" alt="زيارة مدرسة الإمام أحمد">
+                        <div class="image-description">
+                            <h4 id="slide14-title">زيارة مدرسية</h4>
+                            <p id="slide14-desc">تغطية لزيارة فريق الجمعية لمدرسة الإمام أحمد ضمن برنامج الكشف المبكر</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/15.png" alt="حملة توعوية">
+                        <div class="image-description">
+                            <h4 id="slide15-title">ورشة توعوية</h4>
+                            <p id="slide15-desc">جلسة تثقيفية حول طرق الوقاية من الصمم وأعراضه المبكرة</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/16.png" alt="توزيع أدوية">
+                        <div class="image-description">
+                            <h4 id="slide16-title">رعاية شاملة</h4>
+                            <p id="slide16-desc">توزيع العلاجات والأدوية خلال إحدى الحملات الميدانية</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/17.png" alt="زيارة اللويبدة">
+                        <div class="image-description">
+                            <h4 id="slide17-title">خدمة المجتمعات</h4>
+                            <p id="slide17-desc">زيارة ميدانية لمدينة اللويبدة في منطقة إينشيري لتقديم الخدمات الطبية</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="images/18.png" alt="عمل ميداني">
+                        <div class="image-description">
+                            <h4 id="slide18-title">وصول إلى الجميع</h4>
+                            <p id="slide18-desc">بعثة طبية لإحدى المناطق النائية التي تفتقر إلى الخدمات الصحية الأساسية</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="gallery-nav next" onclick="nextSlide()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+            <div class="gallery-dots">
+                <!-- Dots will be added by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section" id="video">
+        <div class="container">
+            <h2 class="section-title" id="video-title"><i class="fas fa-video"></i> فيديو توعوي</h2>
+            <div class="video-container">
+                <video controls poster="images/video-poster.jpg">
+                    <source src="images/video.mp4" type="video/mp4">
+                    <span id="video-not-supported">متصفحك لا يدعم تشغيل الفيديو</span>
+                </video>
+                <div class="video-description">
+                    <h3><i class="fas fa-info-circle"></i> <span id="video-desc-title">شرح حالة مريض</span></h3>
+                    <p id="video-desc-p1">في هذا الفيديو، يقوم الدكتور عبد الله ولد الددي بشرح حالة أحد المرضى الذين يعانون من مشاكل في السمع، حيث يوضح التشخيص والخطة العلاجية المتبعة. يظهر الفيديو كيفية الفحص الطبي وأهمية الكشف المبكر عن مشاكل السمع.</p>
+                    <p id="video-desc-p2">يقدم الدكتور شرحاً وافياً عن حالة المريض وطبيعة المشكلة التي يعاني منها، مع توضيح لطرق الوقاية والعلاج المتاحة من خلال الجمعية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Symptoms Section - Centered -->
+    <section class="symptoms" id="symptoms">
+        <div class="container">
+            <h2 id="symptoms-title"><i class="fas fa-notes-medical"></i> أعراض الصمم التي يجب الانتباه لها</h2>
+            
+            <div class="symptoms-container">
+                <!-- Arabic Symptoms - Centered -->
+                <div class="symptoms-list arabic" id="symptoms-arabic">
+                    <h3 class="centered"><i class="fas fa-shield-alt"></i> <span id="symptoms-subtitle-ar">معرفة هذه الأعراض حماية لأطفالنا من الصم</span></h3>
+                    <ol class="centered-list" id="symptoms-list-ar">
+                        <li><i class="fas fa-chart-line-down"></i> تدني مستوى التلميذ</li>
+                        <li><i class="fas fa-eye"></i> تحديق التلميذ في وجه المعلم أثناء إلقاء الدرس</li>
+                        <li><i class="fas fa-tint"></i> خروج بعض السوائل من الأذن أو الأنف</li>
+                        <li><i class="fas fa-hand-scratch"></i> وجود حكة دائمة بالأذن</li>
+                        <li><i class="fas fa-comment-slash"></i> إجابة غير مرتبطة بالسؤال</li>
+                        <li><i class="fas fa-moon"></i> نقص السمع في الظلام</li>
+                        <li><i class="fas fa-cotton-bureau"></i> وجود قطعة من القطن في الأذن</li>
+                        <li><i class="fas fa-dizzy"></i> شعور التلميذ بالدوران</li>
+                        <li><i class="fas fa-throat"></i> التهاب اللوزتين الدائم</li>
+                        <li><i class="fas fa-head-side-cough"></i> التهاب الجيوب الأنفية</li>
+                        <li><i class="fas fa-tooth"></i> وجود تسوس بالأسنان</li>
+                        <li><i class="fas fa-eye-redo"></i> الرمد الدائم</li>
+                    </ol>
+                </div>
+                
+                <!-- French Symptoms - Centered -->
+                <div class="symptoms-list french" id="symptoms-french" style="display: none;">
+                    <h3 class="centered"><i class="fas fa-shield-alt"></i> <span id="symptoms-subtitle-fr">Connaître ces symptômes c'est prévenir la surdité chez nos enfants</span></h3>
+                    <ol class="centered-list" id="symptoms-list-fr">
+                        <li><i class="fas fa-chart-line-down"></i> Baisse de niveau de l'enfant</li>
+                        <li><i class="fas fa-eye"></i> Elève fixant l'enseignant</li>
+                        <li><i class="fas fa-tint"></i> Sécrétion de l'oreille et du nez</li>
+                        <li><i class="fas fa-hand-scratch"></i> Démangeaison permanente de l'oreille</li>
+                        <li><i class="fas fa-comment-slash"></i> Réponse hors sujet</li>
+                        <li><i class="fas fa-moon"></i> Diminution de l'audition dans l'obscurité</li>
+                        <li><i class="fas fa-cotton-bureau"></i> Oreille bouchée avec du coton</li>
+                        <li><i class="fas fa-dizzy"></i> Sensation de vertiges</li>
+                        <li><i class="fas fa-throat"></i> Douleur de la gorge (Angines)</li>
+                        <li><i class="fas fa-head-side-cough"></i> Des Céphalées (Sinusite)</li>
+                        <li><i class="fas fa-tooth"></i> Carie dentaire</li>
+                        <li><i class="fas fa-eye-redo"></i> Conjonctivites</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about-main">
+        <div class="container">
+            <h2 id="about-main-title"><i class="fas fa-info-circle"></i> عن الجمعية</h2>
+            <p id="about-main-content"><i class="fas fa-arrow-left"></i> الجمعية الموريتانية للوقاية من الصمم هي منظمة تعمل على مكافحة الصمم في موريتانيا، وتهدف إلى الحد من انتشاره وتوفير الدعم للمصابين به. تتضمن جهودنا أنشطة توعوية حول أسباب الصمم وطرق الوقاية منه، بالإضافة إلى توفير خدمات الرعاية الصحية وتركيب أجهزة السمع للمحتاجين.</p>
+        </div>
+    </section>
+
+    <section class="official-info" id="official-info">
+        <div class="container">
+            <h2 id="official-title"><i class="fas fa-file-alt"></i> المعلومات الرسمية</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3><i class="fas fa-gavel"></i> <span id="legal-ref-title">المرجع القانوني</span></h3>
+                    <p><i class="fas fa-arrow-left"></i> <span id="legal-ref-content">المادة 7 من القانون رقم 1021/2021 الصادر بتاريخ 10/02/2021 المتعلق بالجمعيات والهيئات والمؤسسات</span></p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fas fa-calendar-day"></i> <span id="foundation-date-title">تاريخ التأسيس</span></h3>
+                    <p><i class="fas fa-arrow-left"></i> <span id="foundation-date-content">29 مارس 2005</span></p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fas fa-id-card"></i> <span id="license-title">رقم الترخيص</span></h3>
+                    <p><i class="fas fa-arrow-left"></i> <span id="license-content">FA 010000231007202511266</span></p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fas fa-map-marker-alt"></i> <span id="address-title">العنوان</span></h3>
+                    <p><i class="fas fa-arrow-left"></i> <span id="address-content">عيادة لالة الطبية، 175 حي ك رقم، ص ب 1320، انواكشوط، موريتانيا</span></p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fas fa-phone-alt"></i> <span id="contact-info-title">معلومات الاتصال</span></h3>
+                    <p><i class="fas fa-arrow-left"></i> <span id="contact-info-content">يرجى التواصل عبر الهاتف أو الحضور مباشرة إلى العيادة.</span></p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fas fa-clock"></i> <span id="consultation-hours-title">أوقات الاستشارة</span></h3>
+                    <p><i class="fas fa-arrow-left"></i> <span id="consultation-hours-content">الجمعة والسبت من الساعة 10:00 صباحًا حتى 12:00 ظهرًا (GMT)</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="activities" id="activities">
+        <div class="container">
+            <h2 id="activities-title"><i class="fas fa-tasks"></i> أنشطتنا</h2>
+            
+            <div class="activity">
+                <div class="activity-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <div class="activity-content">
+                    <h3 id="awareness-title">التوعية</h3>
+                    <p id="awareness-content">
+                        <i class="fas fa-arrow-circle-left"></i> نشر الوعي حول أسباب الصمم وطرق الوقاية منه بين أفراد المجتمع.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="activity">
+                <div class="activity-icon">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+                <div class="activity-content">
+                    <h3 id="early-detection-title">الكشف المبكر</h3>
+                    <p id="early-detection-content">
+                        <i class="fas fa-arrow-circle-left"></i> إجراء فحوصات للكشف المبكر عن حالات الصمم، خاصة بين الأطفال، لتسهيل التدخل المبكر والعلاج المناسب.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="activity">
+                <div class="activity-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="activity-content">
+                    <h3 id="school-visits-title">زيارات المدارس</h3>
+                    <p id="school-visits-content">
+                        <i class="fas fa-arrow-circle-left"></i> يقوم فريقنا بمعاينة وتشخيص الحالة الصحية للتلاميذ الذين يعانون من أمراض في الأذن وأنواع مختلفة من الصمم في مدارس مختلفة المناطق.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 id="contact-title"><i class="fas fa-envelope"></i> اتصل بنا</h2>
+            <address>
+                <p id="contact-address"><i class="fas fa-map-marker-alt"></i> نواكشوط، موريتانيا</p>
+                <p id="contact-email"><i class="fas fa-envelope"></i> <span id="email-label">البريد الإلكتروني:</span> info@deafness-prevention.mr</p>
+                <p id="contact-phone"><i class="fas fa-phone"></i> <span id="phone-label">الهاتف:</span> 0022236630182</p>
+                <div class="whatsapp-link">
+                    <a href="https://wa.me/22220180587" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span id="whatsapp-number">واتساب: 0022220180587</span>
+                    </a>
+                </div>
+            </address>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p id="footer-text"><i class="far fa-copyright"></i> 2025 الجمعية الموريتانية للوقاية من الصمم. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="scriptx.js"></script>
+</body>
+</html>
